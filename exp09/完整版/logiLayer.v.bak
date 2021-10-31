@@ -1,0 +1,68 @@
+module logiLayer(
+input clk,
+input ps2_clk,
+input ps2_data,
+input vga_clk,
+input VGA_BLANK_N,
+input [9:0]h_addr,
+input [9:0]v_addr,
+
+output reg [23:0] vga_data,
+output reg LEDR
+);
+
+integer x;
+integer y;
+integer x_;
+integer y_;
+integer index;
+integer asc;
+
+wire ovfl;
+wire [7:0] data;
+wire ready;
+
+
+(* ram_init_file = "vga_font.mif" *) reg [11:0] data_matrix [4095:0];
+reg [7:0] v_ram [1919:0];
+reg [11:0] matrix_line;
+(* ram_init_file = "scancode.mif" *) reg [7:0] ram [255:0];
+(* ram_init_file = "scancode_cap.mif" *) reg [7:0] ram_cap [255:0];
+reg [7:0] count;
+reg [7:0] effdata;
+reg nextdata_n;
+reg state;
+reg capslock;
+reg shiftlock;
+reg [9:0] counth;
+reg [9:0] countv;
+reg [6:0] countx;
+reg [10:0] county;
+reg [7:0] ascii;
+
+initial 
+begin
+vga_data = 0;
+x = 0;
+y = 0;
+x_ = 0;
+y_ = 0;
+index = 0;
+asc = 0;
+counth = 0;
+countv = 0;
+countx = 0;
+county = 0;
+ascii = 0;
+matrix_line = 0;
+effdata = 0;
+capslock = 0;
+shiftlock = 0;
+state = 0;
+count = 0;
+counth = 0;
+countv = 0;
+end
+
+
+endmodule

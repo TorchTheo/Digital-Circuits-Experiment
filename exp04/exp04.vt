@@ -1,0 +1,36 @@
+
+`timescale 1 ns/ 1 ps
+module exp04_vlg_tst();
+reg eachvec;
+reg clear;
+reg clk;
+reg en;
+reg stop;                                              
+wire endone;
+wire [6:0]  seg0;
+wire [6:0]  seg1;
+                        
+exp_five_timer i1 (
+	.clear(clear),
+	.clk(clk),
+	.en(en),
+	.endone(endone),
+	.seg0(seg0),
+	.seg1(seg1),
+	.stop(stop)
+);
+initial                                                
+begin                         
+	clk=0;
+	en=1;clear=0;stop=0;#5;
+	en=1;clear=0;stop=1;#5;
+	en=1;clear=1;stop=1;#5;
+	en=0;clear=1;stop=1;#5;                    
+end                                                    
+always                
+begin                       
+     #1 clk=~clk;                                                                                        
+                                            
+end                                                    
+endmodule
+

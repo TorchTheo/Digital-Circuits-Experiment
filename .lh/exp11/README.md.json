@@ -1,0 +1,30 @@
+{
+    "sourceFile": "exp11/README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1640315235090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1640315292689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n `rv32i.v` 是头歌提交的通过代码\r\n 本实验中容易出现的问题是信号生成和ALU的移位计算<br>\r\n 如果本实验在信号生成时使用的是条件分支语句，可能会影响到实验12的性能<br>\r\n-对于本实验的 `debug` 推荐使用 `vscode` \n\\ No newline at end of file\n+对于本实验的 `debug` 推荐使用 `vscode` 相关环境配置点击<a href=\"\">这里\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1640315329080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n `rv32i.v` 是头歌提交的通过代码\r\n 本实验中容易出现的问题是信号生成和ALU的移位计算<br>\r\n 如果本实验在信号生成时使用的是条件分支语句，可能会影响到实验12的性能<br>\r\n-对于本实验的 `debug` 推荐使用 `vscode` 相关环境配置点击<a href=\"\">这里\n\\ No newline at end of file\n+对于本实验的 `debug` 推荐使用 `vscode` 相关环境配置点击<a href=\"https://zhuanlan.zhihu.com/p/367612172\">这里</a>跳转<br>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1640315365380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n `rv32i.v` 是头歌提交的通过代码\r\n 本实验中容易出现的问题是信号生成和ALU的移位计算<br>\r\n 如果本实验在信号生成时使用的是条件分支语句，可能会影响到实验12的性能<br>\r\n-对于本实验的 `debug` 推荐使用 `vscode` 相关环境配置点击<a href=\"https://zhuanlan.zhihu.com/p/367612172\">这里</a>跳转<br>\n\\ No newline at end of file\n+对于本实验的 `debug` 推荐使用 `vscode` 相关环境配置点击<a href=\"https://zhuanlan.zhihu.com/p/367612172\">这里</a>跳转<br>\r\n+`modules` 中存放的是本实验用到的模块，可以在实验12中进行参考\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1640315235090,
+            "name": "Commit-0",
+            "content": "`rv32i.v` 是头歌提交的通过代码\r\n本实验中容易出现的问题是信号生成和ALU的移位计算<br>\r\n如果本实验在信号生成时使用的是条件分支语句，可能会影响到实验12的性能<br>\r\n对于本实验的 `debug` 推荐使用 `vscode` "
+        }
+    ]
+}
